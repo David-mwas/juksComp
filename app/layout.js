@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`flex justify-center h-screen w-screen ${inter.className}`}>
+      <body className={`flex justify-center h-screen w-screen scroll-container overflow-y-scroll scrollbar-thin scrollbar-thumb-200-500 scrollbar-track-gray-200 ${inter.className}`}>
         <div className='h-[100%] border-[2px] border-r-[#FFE7A0] w-[250px]'>
 
          <SideBar/>
