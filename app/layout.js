@@ -13,12 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`flex justify-center h-screen w-screen ${inter.className}`}>
-        <div className='h-[100%] border-[2px] border-r-[#FFE7A0] w-[200px]'>
+        <div className='h-[100%] border-[2px] border-r-[#FFE7A0] w-[250px]'>
 
          <SideBar/>
  
         </div>
-        <div className='flex-1 h-[100%] '>
+        <div className='flex-1 h-[100%]'>
 
         {children}
 

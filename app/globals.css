@@ -17,5 +17,11 @@
 }
 
 body {
+  overflow-x: hidden;
   background: white;
+}
+
+.inputShadow{
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(184, 165, 91,0.5);
 }
