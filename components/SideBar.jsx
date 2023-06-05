@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+import { usePathname } from 'next/navigation';
+import React, { useEffect, useState } from 'react'
 import NavItem from './NavItem'
 import Link from 'next/link';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,11 +11,22 @@ import NewProject from './NewProject';
 import { FaBolt, FaExclamationTriangle, FaHome, FaStar, FaTable } from 'react-icons/fa';
 
 function SideBar() {
+   const pathname = usePathname();
+    const [active,setActive] = useState(false)
+
+     useEffect(()=>{
+      if(!pathname){
+        return
+      }
+      setActive(pathname.includes("/"||title))
+    },[pathname])
+  
+console.log(pathname)
   return (
     <div className='flex flex-col items-start justify-center'>
         <h1 className='mb-6 mt-2 bg-gray-500 font-bold text-white mx-5 px-7'>Jukwaa</h1>
-        <Link href="/" className='w-[100%] px-5'>
-      <div className='flex items-center p-1 my-2 space-x-3 hover:bg-[#e2ca69] w-[100%]'>
+        <Link href="/" className={`w-[100%] px-5`}>
+      <div className={`flex items-center p-1 my-2 space-x-3  w-[100%] ${active && " bg-[#e2ca69]"}`}>
         <FaHome className='w-5 h-5 text-gray-400'/>
          <p className='text-sm text-gray-500'>House</p>
     </div>
@@ -21,8 +34,8 @@ function SideBar() {
     
         <div className='mb-[30px] w-[100%] px-5'>
             <NavItem icon={<FaTable/>} title="categories"/>
-            <NavItem icon={<FaStar/>} title="New Post"/>
-            <NavItem icon={<FaBolt/>} title="Trending Posts"/>
+            <NavItem icon={<FaStar/>} title="NewPost"/>
+            <NavItem icon={<FaBolt/>} title="TrendingPosts"/>
             <NavItem icon={<FaExclamationTriangle/>} title="Reports"/>
 
            
