@@ -4,7 +4,7 @@ function CommentItem({src,name,text,likes,dislikes,replies,time}) {
   return (
     <div>
         <div className='flex space-x-5 w-[100%] mb-5'>
-    <img src='p4.jpeg' alt="img"  width="50px" className='w-[50px] h-[50px] rounded-full'/>
+    <img src='assets/p4.jpeg' alt="img"  width="50px" className='w-[50px] h-[50px] rounded-full'/>
     <div>
        <p className='font-bold text-[14px] text-gray-600'> {name} <span className=' ml-3 text-sm font-semibold text-gray-400'> {time}</span></p>
        <p className='text-gray-500 text-[12px]  text-sm'> {text}</p>
