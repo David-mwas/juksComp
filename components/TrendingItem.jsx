@@ -3,7 +3,7 @@ import React from 'react'
 function TrendingItem({src,text}) {
   return (
     <div className='flex items-center space-x-5 w-[100%] mb-5'>
-        <img src={src} alt="img"  width="30px"/>
+        <img src={src} alt="img"  width="30px" className='w-[30px] h-[30px] rounded-full'/>
         <div>
             {/* {text.map((item)=>(
                     <p className={`text-sm ${item && "text-red-500" }`}>{item}</p>

@@ -14,7 +14,7 @@ function Header() {
         <div className='flex items-center justify-center space-x-5 '>
         <FaBell color='gray'/>
         <FaEnvelope color='gray'/>
-        <img src=' ' alt='profile'/>
+        <img src='/assets/face.jpeg' alt='profile' className='w-[50px] h-[50px] rounded-full'/>
         </div>
         <div>
             <p>Annah</p>

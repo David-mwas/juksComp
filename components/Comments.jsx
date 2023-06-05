@@ -7,7 +7,7 @@ function Comments() {
   return (
     <div className='scroll-container border border-gray-200 ml-3 overflow-y-scroll scrollbar-thin scrollbar-thumb-200-500 scrollbar-track-gray-200 h-screen py-3 px-4'>
        <div className='flex items-center justify-between space-x-2 px-2 pt-5'>
-        <img src="profile" alt="profile" />
+        <img src="/assets/face.jpeg" alt="profile" className='w-[50px] h-[50px] rounded-full'/>
         <input type="text" placeholder='Whats on your mind' className='w-[80%] border border-gray-500 flx-1 rounded-full p-2 outline-none'/>
        </div>
        <div className='flex items-center justify-between space-x-2 px-2 pt-5'>
